@@ -1,0 +1,23 @@
+.form-control {
+    width: 40%!important;
+    justify-content: center!important;
+}
+.form-row {
+    justify-content: center!important;
+    margin-top: 50px;
+}
+.answer_style {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 30px;
+}
+
+body {
+    background-color: #e8f0f5!important;
+    font-family: 'Shadows Into Light', cursive!important;
+    font-weight: 600;
+}
+
+.container {
+    padding-top: 100px;
+}
