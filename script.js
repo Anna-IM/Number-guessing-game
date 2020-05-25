@@ -1,35 +1,28 @@
-let number_tries = 3;
-let result = Math.floor(Math.random() * 10);
+let numberTries = 3;
+const result = Math.floor(Math.random() * 10);
+const guess = document.querySelector("#text");
+const answer = document.querySelector("#answer");
 
-
-function myFunction() {
-    console.log(number_tries);
-    // console.log(result);
-    let guess = document.getElementById("text");
-    // console.log(guess.value);
-    let answer = document.getElementById("answer");
-
-    // check the number
-    if (guess.value > 10 || guess.value < 0){
-        answer.innerHTML = "Please enter a number between 1 and 10";
-        // location.reload();
+const guessNumber = () => {
+  // check the number
+  if (guess.value > 10 || guess.value < 0) {
+    answer.innerText = "Please enter a number between 1 and 10";
     // number of tries
-    } else if (number_tries == 0){
-        answer.innerHTML = "You're out of tries " + number_tries;
-        //reload the page
-        setTimeout(function () { 
-        location.reload();
-        }, 3000);
-
-    } else if (guess.value != result){
-        console.log("try again " + number_tries);
-        answer.innerHTML = "Try again ";
-    } else if(guess.value == result){
-        console.log("you won");    
-        answer.innerHTML = "You won!";
-        setTimeout(function () { 
-        location.reload();
-        }, 3000);
-    }
-    number_tries--;
+  } else if (numberTries == 0) {
+    answer.innerText = "You're out of tries " + numberTries;
+    //reload the page
+    setTimeout(() => {
+      location.reload();
+    }, 3000);
+  } else if (guess.value != result) {
+    console.log("try again " + numberTries);
+    answer.innerText = "Try again ";
+  } else if (guess.value == result) {
+    console.log("you won");
+    answer.innerText = "You won!";
+    setTimeout(() => {
+      location.reload();
+    }, 3000);
+  }
+  numberTries--;
 };

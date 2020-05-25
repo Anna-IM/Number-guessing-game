@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Number guess game</title>
   <meta charset="utf-8">
@@ -11,22 +12,28 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  
-<div class="container mt-3 text-center">
-  <h1>Number guessing game</h1>
-  <p>Please choose a number between 1 and 10:</p>
+
+  <div class="container mt-3 text-center">
+    <h1>Number guessing game</h1>
+    <p>Please choose a number between 1 and 10:</p>
 
     <div class="justify-content-md-center">
       <div class="form-row justify-content-md-center">
-      <!-- input field -->
-      <input id="text" class="form-control mb-2 mr-sm-2" placeholder="Your number" aria-label="User's number" aria-describedby="basic-addon2">
-    </div>
-      <div type="button"><button class="btn btn-outline-danger" type="button" onclick="myFunction()">Check</button>
-    </div>
+        <!-- input field -->
+        <input id="text" class="form-control mb-2 mr-sm-2" placeholder="Your number" aria-label="User's number"
+          aria-describedby="basic-addon2">
+      </div>
+      <div type="button"><button class="btn btn-outline-danger" type="button" onclick="guessNumber()">Check</button>
+      </div>
 
-  <div id="answer" class="answer_style"></div>
-</div>
-<script src="script.js"></script>
+      <div id="answer" class="answer_style"></div>
+    </div>
+    <div class="container text-center">
+      <img src="img/RPs9.gif" class="giffy" alt="Numbers gif">
+    </div>
 </body>
+<script src="script.js"></script>
+
 </html>
